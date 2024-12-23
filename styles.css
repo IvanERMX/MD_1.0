@@ -1,1 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.explorer, .viewer {
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.explorer {
+    width: 25%;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+}
+
+.viewer {
+    width: 75%;
+}
+
+#file-tree ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#file-tree li {
+    cursor: pointer;
+    padding: 5px;
+    margin: 2px 0;
+}
+
+#file-tree li:hover {
+    background-color: #ddd;
+}
+
+#markdown-menu {
+    margin-bottom: 10px;
+}
+
+#markdown-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    height: 300px;
+    overflow-y: auto;
+}
+
+#comments-section {
+    margin-top: 20px;
+}
+
+#comments {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    max-height: 150px;
+    overflow-y: auto;
+}
