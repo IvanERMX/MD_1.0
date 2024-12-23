@@ -1,6 +1,6 @@
 const repoOwner = "IvanERMX";  // Reemplaza con tu usuario de GitHub
 const repoName = "MD_1.0";    // Reemplaza con el nombre de tu repositorio
-const apiUrl = `https://api.github.com/repos/IvanERMX/MD_1.0/contents/`;
+const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
 // Función para obtener y mostrar el árbol de archivos
 function fetchFileTree(path = "") {
@@ -60,19 +60,6 @@ function generateMarkdownMenu(markdown) {
         })
         .join("<br>");
 }
-
-// Función para agregar un comentario
-document.getElementById("submit-comment").addEventListener("click", () => {
-    const commentInput = document.getElementById("comment-input");
-    const comment = commentInput.value;
-    if (comment) {
-        const comments = document.getElementById("comments");
-        const commentDiv = document.createElement("div");
-        commentDiv.textContent = comment;
-        comments.appendChild(commentDiv);
-        commentInput.value = "";
-    }
-});
 
 // Cargar el árbol de archivos cuando se cargue la página
 fetchFileTree();
