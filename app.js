@@ -1,5 +1,5 @@
 const repoOwner = "IvanERMX";
-const repoName = "MD_1.0";
+const repoName = "PAYMO";
 const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
 
 // Fetch y render del árbol de archivos
