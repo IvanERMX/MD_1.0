@@ -6,6 +6,7 @@
     <title>Markdown Explorer</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,13 +27,8 @@
             <div id="markdown-content">
                 <!-- Aquí se renderiza el archivo Markdown -->
             </div>
-            <div id="comments-section">
-                <h3>Comentarios</h3>
-                <textarea id="comment-input" placeholder="Escribe tu comentario aquí"></textarea>
-                <button id="submit-comment">Enviar comentario</button>
-                <div id="comments">
-                    <!-- Aquí se mostrarán los comentarios -->
-                </div>
+            <div class="commonninja_component pid-6ad20150-7b90-41c6-8251-4f682f5e7a22">
+                <!-- Comentarios de Common Ninja -->
             </div>
         </div>
     </main>
