@@ -1,6 +1,6 @@
 const repoOwner = "IvanERMX";  // Reemplaza con tu usuario de GitHub
 const repoName = "MD_1.0";    // Reemplaza con el nombre de tu repositorio
-const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/`;
+const apiUrl = `https://api.github.com/repos/IvanERMX/MD_1.0/contents/`;
 
 // Función para obtener y mostrar el árbol de archivos
 function fetchFileTree(path = "") {
